@@ -9,65 +9,18 @@ menu.addEventListener("click", function(){
     else{
         drop.style.display="flex"
     }
+    // drop.classList.toggle("flex")
+});
+
+document.addEventListener('click', function outside(event) {
+  // console.log("x")
+  if (!menu.contains(event.target)) {
+    drop.style.display='none';
+  }
 });
 
 // navbar drop dwon
 
-// let navlist = document.getElementsByClassName("nav-list-item")
-//     navlist[0].addEventListener ("click",function(){
-//         console.log("click")
-//         navlist[0].classList.add("slt");
-//         navlist[1].classList.remove("slt");
-//         navlist[2].classList.remove("slt");
-//         navlist[3].classList.remove("slt");
-//         navlist[4].classList.remove("slt");
-//         navlist[5].classList.remove("slt");
-//     });
-//     navlist[1].addEventListener ("click",function(){
-//         console.log("click")
-//         navlist[1].classList.add("slt");
-//         navlist[0].classList.remove("slt");
-//         navlist[2].classList.remove("slt");
-//         navlist[3].classList.remove("slt");
-//         navlist[4].classList.remove("slt");
-//         navlist[5].classList.remove("slt");
-//     });
-//     navlist[2].addEventListener ("click",function(){
-//         console.log("click")
-//         navlist[2].classList.add("slt");
-//         navlist[1].classList.remove("slt");
-//         navlist[0].classList.remove("slt");
-//         navlist[3].classList.remove("slt");
-//         navlist[4].classList.remove("slt");
-//         navlist[5].classList.remove("slt");
-//     });
-//     navlist[3].addEventListener ("click",function(){
-//         console.log("click")
-//         navlist[3].classList.add("slt");
-//         navlist[1].classList.remove("slt");
-//         navlist[2].classList.remove("slt");
-//         navlist[0].classList.remove("slt");
-//         navlist[4].classList.remove("slt");
-//         navlist[5].classList.remove("slt");
-//     });
-//     navlist[4].addEventListener ("click",function(){
-//         console.log("click")
-//         navlist[4].classList.add("slt");
-//         navlist[1].classList.remove("slt");
-//         navlist[2].classList.remove("slt");
-//         navlist[3].classList.remove("slt");
-//         navlist[0].classList.remove("slt");
-//         navlist[5].classList.remove("slt");
-//     });
-//     navlist[5].addEventListener ("click",function(){
-//         console.log("click")
-//         navlist[5].classList.add("slt");
-//         navlist[1].classList.remove("slt");
-//         navlist[2].classList.remove("slt");
-//         navlist[3].classList.remove("slt");
-//         navlist[4].classList.remove("slt");
-//         navlist[0].classList.remove("slt");
-//     });
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
